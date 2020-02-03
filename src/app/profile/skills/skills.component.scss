@@ -1,0 +1,33 @@
+@mixin width-skill($size) {
+    width: $size;
+  }
+
+  .sharp {
+    @include width-skill(62%);
+}
+
+.type-script {
+    @include width-skill(56%);
+}
+
+.asp-net-core {
+    @include width-skill(45%);
+}
+
+.angular-2 {
+    @include width-skill(62%);
+}
+
+.ef-core {
+    @include width-skill(38%);
+}
+
+.html5-scss {
+    @include width-skill(53%);
+}
+
+::ng-deep {
+    .progress-container.progress-primary .progress-bar {
+        background: green;
+    }
+}
