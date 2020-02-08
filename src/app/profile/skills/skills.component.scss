@@ -25,9 +25,3 @@
 .html5-scss {
     @include width-skill(53%);
 }
-
-::ng-deep {
-    .progress-container.progress-primary .progress-bar {
-        background: green;
-    }
-}
