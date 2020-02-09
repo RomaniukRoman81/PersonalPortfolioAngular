@@ -14,5 +14,9 @@ body {
 
     .card, .input-group-addon{
        background-color: #b0bebf;
+
+       &.is-invalid {
+        border-color: red;;
+       }
     }
 }
