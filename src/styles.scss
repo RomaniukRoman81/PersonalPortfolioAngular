@@ -4,12 +4,15 @@ body {
         color: #3393c6;
     }
 
-    .btn-primary, .progress-container.progress-primary .progress-bar {
+    .btn-primary, .btn-primary:disabled, .btn-primary:disabled:hover {
+        background-color: #3393c6;
+    }
+    .progress-container.progress-primary .progress-bar {
         background-color: #3393c6;
     }
 
-    .btn-primary:hover{
-        opacity: 0.8;
+    .btn-primary:disabled{
+        opacity: 0.5;
     }
 
     .card, .input-group-addon{
