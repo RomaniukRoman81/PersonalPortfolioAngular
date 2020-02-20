@@ -1,51 +1,34 @@
 <div class="profile-page">
     <div class="wrapper">
       <div class="page-header page-header-small" filter-color="green">
-        <div class="page-header-image" data-parallax="true" style="background-image: url('assets/images/Esher-Mauric-otnositelnost.jpg');">
-        </div>
+        <div class="page-header-image background-image" data-parallax="true"></div>
         <div class="container">
           <div class="content-center">
             <div class="cc-profile-image">
               <a href="#">
-                <img src="assets/images/photo_200.jpg" alt="Image" />
+                <img [src]="myPhoto" alt="Image" />
               </a>
             </div>
             <div class="h2 title">Roman Romaniuk</div>
             <p class="category text-white">C#/.NET Full Stack Developer</p>
-            <!-- <a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in"
-              data-aos-anchor="data-aos-anchor">Hire Me</a> -->
-            <a class="btn btn-primary"
-              href="https://docs.google.com/document/d/15hqewQ0S5gJYv7Dcxq4CyoCxBuPEb1EqpXj4hnJW5ZM/edit" target="_blank"
-              data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
+            <a class="btn btn-primary" [href]="myCVLink" target="_blank" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
           </div>
         </div>
         <div class="section">
           <div class="container">
             <div class="button-container">
-              <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.facebook.com/profile.php?id=100004749600054"
+              <a class="btn btn-default btn-round btn-lg btn-icon" [href]="myFacebookLink"
                 target="_blank" rel="tooltip" title="My profile on Facebook">
                 <i class="fa fa-facebook"></i>
               </a>
-              <!-- <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.instagram.com/mehul_kothari05/"
-                target="_blank" rel="tooltip" title="Follow me on Instagram">
-                <i class="fa fa-instagram"></i>
-              </a> -->
-              <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/roman-romaniuk-732685156/"
+              <a class="btn btn-default btn-round btn-lg btn-icon" [href]="myLinkedinLink"
                 target="_blank" rel="tooltip" title="My profile on Linkedin">
                 <i class="fa fa-linkedin"></i>
               </a>
-              <a class="btn btn-default btn-round btn-lg btn-icon" href="https://github.com/RomaniukRoman"
+              <a class="btn btn-default btn-round btn-lg btn-icon" [href]="myGithubLink"
                 target="_blank" rel="tooltip" title="My profile on Github">
                 <i class="fa fa-github"></i>
               </a>
-              <!-- <a class="btn btn-default btn-round btn-lg btn-icon" href="https://twitter.com/MehulKo18943279"
-                target="_blank" rel="tooltip" title="Follow me on Twitter">
-                <i class="fa fa-twitter"></i>
-              </a> -->
-              <!-- <a class="btn btn-default btn-round btn-lg btn-icon" href="#" target="_blank" rel="tooltip"
-                title="Follow me on Google+">
-                <i class="fa fa-google-plus"></i>
-              </a> -->
             </div>
           </div>
         </div>

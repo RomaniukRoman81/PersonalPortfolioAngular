@@ -22,4 +22,10 @@ body {
         border-color: red;;
        }
     }
+
+    .page-header-image {
+        &.background-image {
+            background-image: url('assets/images/Esher-Mauric-otnositelnost.jpg');
+        }
+    }
 }

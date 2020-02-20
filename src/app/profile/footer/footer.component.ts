@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Constants } from 'src/app/constants';
 
 @Component({
   selector: 'app-footer',
@@ -7,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
   yearNow = new Date().getFullYear();
+  myFacebookLink = Constants.socialMediaLinks.myFacebook;
+  myGithubLink = Constants.socialMediaLinks.myGithub;
+
   constructor() { }
 
   ngOnInit() {
