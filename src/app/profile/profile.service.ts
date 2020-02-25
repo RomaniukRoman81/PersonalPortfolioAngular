@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
+import { SkillsDataDto } from '../models/SkillsDataDto';
 
 @Injectable({
   providedIn: 'root'
@@ -10,41 +11,41 @@ export class ProfileService {
   // baseUrl = environment.baseUrl;
 
   constructor(
-    private http: HttpClient
+    private httpClient: HttpClient
   ) { }
 
-  skillsData: any = [
-    {
-      id: '1',
-      skill: 'ANGULAR 6',
-      progress: '85%'
-    },
-    {
-      id: '2',
-      skill: 'PHP\/CODEIGNITER',
-      progress: '80%'
-    },
-    {
-      id: '3',
-      skill: 'C++',
-      progress: '80%'
-    },
-    {
-      id: '4',
-      skill: 'PYTHON',
-      progress: '75%'
-    },
-    {
-      id: '5',
-      skill: 'ADOBE ILLUSTRATOR',
-      progress: '75%'
-    },
-    {
-      id: '6',
-      skill: 'DATA STRUCTURE',
-      progress: '70%'
-    }
-  ];
+  // skillsData: Array<SkillsDataDto> = [
+  //   {
+  //     id: 1,
+  //     skill: 'C#',
+  //     progress: '62%'
+  //   },
+  //   {
+  //     id: 2,
+  //     skill: 'TypeScript',
+  //     progress: '56%'
+  //   },
+  //   {
+  //     id: 3,
+  //     skill: 'ASP.NET Core',
+  //     progress: '45%'
+  //   },
+  //   {
+  //     id: 4,
+  //     skill: 'Angular2+',
+  //     progress: '62%'
+  //   },
+  //   {
+  //     id: 5,
+  //     skill: 'Entity Framework Core',
+  //     progress: '38%'
+  //   },
+  //   {
+  //     id: 6,
+  //     skill: 'HTML5,SCSS',
+  //     progress: '53%'
+  //   }
+  // ];
 
   educationData: any = [
     {
@@ -102,9 +103,10 @@ export class ProfileService {
   //   return this.http.post(this.baseUrl + 'contact', data);
   // }
 
-  skills(): Observable<any> {
+  getSkills(): Observable<Array<SkillsDataDto>> {
     // return this.http.get(this.baseUrl + 'skills');
-    return this.skillsData;
+    return this.httpClient.get<Array<SkillsDataDto>>('http://localhost:4200/assets/skillsData.json');
+   // return test;
   }
 
   education(): Observable<any> {

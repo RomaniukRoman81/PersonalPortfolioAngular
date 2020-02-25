@@ -1,0 +1,35 @@
+{
+    "skillsData":
+    [
+        {
+            "id": 1,
+            "skill": "C#",
+            "progress": "62%"
+          },
+          {
+            "id": 2,
+            "skill": "TypeScript",
+            "progress": "56%"
+          },
+          {
+            "id": 3,
+            "skill": "ASP.NET Core",
+            "progress": "45%'"
+          },
+          {
+            "id": 4,
+            "skill": "Angular2+",
+            "progress": "62%"
+          },
+          {
+            "id": 5,
+            "skill": "Entity Framework Core",
+            "progress": "38%"
+          },
+          {
+            "id": 6,
+            "skill": "HTML5,SCSS",
+            "progress": "53%"
+          }
+    ]
+}
