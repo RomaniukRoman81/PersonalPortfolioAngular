@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 import { RouterModule, Routes, ExtraOptions } from '@angular/router';
 import { ProfileComponent } from './profile/profile.component';
 import { ProfileModule } from './profile/profile.module';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { Constants } from './constants';
+import { HttpErrorInterceptor } from './http-error.interceptor';
 
 const routes: Routes = [
   {
@@ -32,7 +33,12 @@ const config: ExtraOptions = {
     BrowserAnimationsModule
   ],
   providers: [
-    Constants
+    Constants,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: HttpErrorInterceptor,
+      multi: true
+    }
   ],
   bootstrap: [AppComponent]
 })
