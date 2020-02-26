@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ExprienceDataDto } from 'src/app/models/ExprienceDataDto';
+import { ProfileService } from '../profile.service';
 
 @Component({
   selector: 'app-experience',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent implements OnInit {
+  exprienceData: Array<ExprienceDataDto>;
 
-  constructor() { }
+  constructor(private profileService: ProfileService) { }
 
   ngOnInit() {
+    this.profileService.getExprience().subscribe(
+      data => {
+        this.exprienceData = data['exprienceData'];
+      }
+    );
   }
-
 }

@@ -1,0 +1,21 @@
+{
+    "educationalsData":
+    [
+        {
+            "id": 1,
+            "institution": "CyberBionic Systematics",
+            "stream": "C#/.NET Developer",
+            "faculty": "",
+            "fromToYear": "Jan 2016 - Sep 2016",
+            "diplomaOrCertificate": "certificate TP75500872"
+          },
+          {
+            "id": 2,
+            "institution": "Berdyansk Institute of Entrepreneurship",
+            "stream": "Enterprise Economy",
+            "faculty": "Faculty of Economic",
+            "fromToYear": "Sep 1997 - Jun 2003",
+            "diplomaOrCertificate": ""
+          }
+    ]
+}

@@ -1,16 +1,16 @@
 
-​export class SkillsDataDto {
+​export class SkillDataDto {
     id: number;
     skill: string;
     progress: string;
 
-    'type'?: 'SkillsDataDto';
+    'type'?: 'SkillDataDto';
 
     constructor(data?: any) {
         if (data) {
             this.id = data.id;
-            this.skill = data.regularOtcDrugs;
-            this.progress = data.newPrescribedRx;
+            this.skill = data.skill;
+            this.progress = data.progress;
         }
     }
 }

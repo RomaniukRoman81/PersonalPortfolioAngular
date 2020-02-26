@@ -12,15 +12,11 @@
                           <i class="icon-pen2"></i>
                        </div>
 
-                       <div class="timeline-label">
-                        <h2>junior C#/.Net Full Stack Developer <span>February, 2017 - at Present</span></h2>
-                         <h4> Cloud9 Solutions</h4>
-                          <p>Working on the websites for English, US and Australian universities:</p>
-                        <ul>
-                            <li>Working on both front end and back end parts of the site.</li>
-                            <li>Back end technologies - С#, ASP.Net Core 2, Entity Framework Core.</li>
-                            <li>Front end technologies - Typescript, Angular 2 +.</li>
-                            <li>Bug fixing</li>
+                       <div class="timeline-label" *ngFor="let item of exprienceData">
+                        <h2>{{item.designation}}<span>{{item.fromToMonthYear}}</span></h2>
+                         <h4>{{item.organization}}</h4>
+                        <ul *ngFor="let detail of item.details">
+                            <li>{{detail}}</li>
                         </ul>
                        </div>
                     </div>

@@ -121,29 +121,28 @@
         font-weight: 500; }
 
       .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 a {
-        color: #000; }
-
-      .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 span {
-        -webkit-opacity: .4;
-        -moz-opacity: .4;
-        opacity: .4;
-        -ms-filter: alpha(opacity=40);
-        filter: alpha(opacity=40);
-        font-size: 16px;
-
+        color: #000;
       }
 
-      .timeline-label h4{
+      .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 span {
+
+        margin-left: 20px;
+        color: #545755;
+        font-size: 16px;
+      }
+
+      .timeline-label h4 {
 
         margin-top: -15px;
         font-family: "Quicksand", Arial, sans-serif;
-        color: #545755;font-weight:500;
-
-
+        color: #545755;
+        font-weight:500;
       }
-      .timeline-label span{
 
-       color: #000;font-weight: 600;
+      .timeline-label {
+
+        color: #000;
+        font-weight: 600;
       }
 
       .timeline-label p{

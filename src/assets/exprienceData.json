@@ -1,0 +1,18 @@
+{
+    "exprienceData":
+    [
+        {
+            "id": 1,
+            "organization": "Cloud9 Solutions",
+            "designation": "junior C#/.Net Full Stack Developer",
+            "fromToMonthYear": "February, 2017 - at Present",
+            "details": [
+                "Working on the websites for English, US and Australian universities.",
+                "Working on both front end and back end parts of the site.",
+                "Back end technologies - С#, ASP.Net Core 2, Entity Framework Core.",
+                "Front end technologies - Typescript, Angular 2 +.",
+                "Bug fixing."
+            ]
+          }
+    ]
+}
