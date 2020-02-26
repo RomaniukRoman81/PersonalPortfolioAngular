@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProfileService } from '../profile.service';
-import { SkillsDataDto } from 'src/app/models/SkillsDataDto';
+import { SkillDataDto } from 'src/app/models/SkillDataDto';
 
 @Component({
   selector: 'app-skills',
@@ -8,18 +8,15 @@ import { SkillsDataDto } from 'src/app/models/SkillsDataDto';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
+  skillsData: Array<SkillDataDto>;
 
   constructor(private profileService: ProfileService) { }
 
-  skilsData: Array<SkillsDataDto>;
   ngOnInit() {
     this.profileService.getSkills().subscribe(
       data => {
-        console.log('test data', data['skillsData']);
-        this.skilsData = data['skillsData'];
-        console.log('get test data=>', this.skilsData);
+        this.skillsData = data['skillsData'];
       }
     );
   }
-
 }
