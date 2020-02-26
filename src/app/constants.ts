@@ -11,7 +11,8 @@ export class Constants {
 
     apiRoutes: IApiRoutes = {
         skillsListUrl: 'http://localhost:4200/assets/skillsData.json',
-        educationalsListUrl: 'http://localhost:4200/assets/educationalsData.json'
+        educationalsListUrl: 'http://localhost:4200/assets/educationalsData.json',
+        exprienceListUrl: 'http://localhost:4200/assets/exprienceData.json'
     };
 }
 export interface ISocialMediaLinks {
@@ -23,4 +24,5 @@ export interface ISocialMediaLinks {
 export interface IApiRoutes {
     skillsListUrl: string;
     educationalsListUrl: string;
+    exprienceListUrl: string;
 }
