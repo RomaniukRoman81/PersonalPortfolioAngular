@@ -6,7 +6,7 @@ export class Constants {
         myFacebook: 'https://www.facebook.com/profile.php?id=100004749600054',
         myGithub: 'https://github.com/RomaniukRoman',
         myLinkedin: 'https://www.linkedin.com/in/roman-romaniuk-732685156/',
-        myCV: 'https://docs.google.com/document/d/15hqewQ0S5gJYv7Dcxq4CyoCxBuPEb1EqpXj4hnJW5ZM/edit'
+        myCV: 'https://drive.google.com/open?id=1B9O0p43edhKtPkbdpZevtzjIhb5Bcra4H8NRr724sI0'
     };
 
     apiRoutes: IApiRoutes = {
