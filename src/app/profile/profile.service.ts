@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
-import { retry, catchError } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
 import { SkillDataDto } from '../models/SkillDataDto';
 import { Constants } from '../constants';
@@ -16,10 +15,6 @@ export class ProfileService {
     private httpClient: HttpClient,
     private readonly constans: Constants
   ) { }
-
-  // contactus(data: any): Observable<any> {
-  //   return this.http.post(this.baseUrl + 'contact', data);
-  // }
 
   getSkills(): Observable<Array<SkillDataDto>> {
     return this.httpClient.get<Array<SkillDataDto>>(this.constans.apiRoutes.skillsListUrl);
