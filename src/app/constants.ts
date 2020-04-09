@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 export class Constants {
     static socialMediaLinks: ISocialMediaLinks = {
         myFacebook: 'https://www.facebook.com/profile.php?id=100004749600054',
-        myGithub: 'https://github.com/RomaniukRoman',
+        myGithub: 'https://github.com/RomaniukRoman81',
         myLinkedin: 'https://www.linkedin.com/in/roman-romaniuk-732685156/',
         myCV: 'https://drive.google.com/open?id=1B9O0p43edhKtPkbdpZevtzjIhb5Bcra4H8NRr724sI0'
     };
