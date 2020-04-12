@@ -3,23 +3,11 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
-import { RouterModule, Routes, ExtraOptions } from '@angular/router';
-import { ProfileComponent } from './profile/profile.component';
 import { ProfileModule } from './profile/profile.module';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { Constants } from './constants';
 import { HttpErrorInterceptor } from './http-error.interceptor';
-
-const routes: Routes = [
-  {
-    path: '',
-    component: ProfileComponent
-  }
-];
-
-const config: ExtraOptions = {
-  useHash: true,
-};
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +15,7 @@ const config: ExtraOptions = {
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes, config),
+    AppRoutingModule,
     ProfileModule,
     HttpClientModule,
     BrowserAnimationsModule
